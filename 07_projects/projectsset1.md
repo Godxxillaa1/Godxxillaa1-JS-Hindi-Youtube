@@ -11,6 +11,6 @@
 
 ``` Javascript
 
-console.log("hitesh")
+
 
 ```
