@@ -1,0 +1,39 @@
+@import url("../07_projects/reset.css");
+
+main {
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttons_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+
+.buttons_div button {
+    width: 200px ;
+    height: 30px;
+
+    border: none;
+    color: white;
+
+}
+
+.buttons_div .start {
+    background-color: green;
+}
+.buttons_div .stop {
+    background-color: red;
+} 

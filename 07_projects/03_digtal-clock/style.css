@@ -1,1 +1,58 @@
+@import url(../reset.css);
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Dosis:wght@200..800&family=Parkinsans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+
+main {
+    /* background-color: lightgreen; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+
+main .time {
+    text-align: left;
+    font-size: 9rem;
+
+    color: darkgreen;
+    font-family: "Parkinsans";
+    padding-bottom: 80px;
+    font-weight: 800;
+
+}
+
+main .date {
+    text-align: left;
+    font-size: 2rem;
     
+    color: black;
+    font-family: "Parkinsans";
+    font-weight: 600;
+
+    background-color: #fff;
+    padding: 20px 30px 20px 30px;
+    /* padding-bottom: 80px; */
+    line-height: 0;
+
+}
+
+
+.circle {
+    background-color: green;
+    width: 300px;
+    height: 300px;
+
+    /* position: relative; */
+    position: absolute;
+    left: -100px;
+    top: -100px;
+    z-index: 1;
+    border-radius: 50%;
+  
+}
+

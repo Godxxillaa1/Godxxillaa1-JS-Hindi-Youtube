@@ -1,0 +1,88 @@
+@import url(../reset.css);
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Dosis:wght@200..800&family=Parkinsans:wght@300..800&display=swap');
+
+.default-padding {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+
+
+
+
+
+body {
+    font-family: "Parkinsans";
+    font-size: .8rem;
+}
+
+main{
+    height: 100vh;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.instructions {
+    background-color: green;
+    color: #fff;
+
+    max-width: 100%;
+    min-height: 50px;
+    
+    padding-top: 2.5px ;
+    padding-bottom: 2.5px ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instructions p {
+    text-align: center;
+}
+
+
+
+
+main form input {
+    margin-top: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px green solid;
+    background-color: inherit;
+    font-size: 2em;
+}
+
+main form button{
+    background-color: green;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    /* outline: none; */
+    margin-top: 20px;
+    border-radius: 2px;
+    width: 100px;
+    height: 30px;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    /* width: 50%; */
+    background-color: rgba(173, 255, 47);
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+main .results {
+    margin-top: 50px;
+}
+
+.results-p0 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px;
+}

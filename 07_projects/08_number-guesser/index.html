@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Number Checker</title>
+  </head>
+  <body>
+    <div class="instructions default-padding">
+      <p>
+        Try and guess a random number 1 and 100. You have 10 attempts to guess
+        the right
+      </p>
+    </div>
+    <main class="default-padding">
+        <h1>Number Game!</h1>
+
+        <form>
+            <p class="results-p0" id="results_error"></p>
+            <input type="text" id="myInput">
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+
+        <div class="results">
+            <p class="results-p1" id="results_prev-guesses"></p>
+            <p class="results-p2" id="results_guesses-remaining"></p>
+        </div>
+    </main>
+  </body>
+</html>

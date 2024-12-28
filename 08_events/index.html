@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>HTML EVENTS</title>
+  </head>
+  <body>
+    <h1>This is a automatic color changer.</h1>
+
+    <div class="buttons_div">
+      <button class="start">Start</button>
+      <button class="stop">Stop</button>
+    </div>
+
+    <script>
+      const startButton = document.querySelector(".start");
+      const stopButton = document.querySelector(".stop");
+      const background = document.querySelector("body");
+
+      //   background.style.backgroundColor = "green";
+      const listOfColors = [
+        "#ffe4e1", // Light Red
+        "#e0ffe1", // Light Green
+        "#e1f5fe", // Light Blue
+        "#f3e1ff", // Light Purple
+        "#f8f0e3", // Light Yellow
+        "#fff0e3", // Light Ivory
+        "#e3f0ff", // Light Cyan
+        "#f0e3ff", // Light Magenta
+        "#f0e3e3", // Light Gray
+        "#e3f0f0", // Light Silver
+        "#ffe4e1", // Light Salmon
+        "#e0ffe1", // Light Mint
+        "#e1f5fe", // Light Sky Blue
+        "#f3e1ff", // Light Lavender
+        "#f8f0e3", // Light Cream
+        "#fff0e3", // Light Beige
+        "#e3f0ff", // Light Turquoise
+        "#f0e3ff", // Light Pink
+        "#f0e3e3", // Light Pearl
+        "#e3f0f0", // Light Steel Gray
+        "#ffe4e1", // Light Coral
+        "#e0ffe1", // Light Lime
+        "#e1f5fe", // Light Azure
+        "#f3e1ff", // Light Orchid
+        "#f8f0e3", // Light Vanilla
+      ];
+
+      let a = 0;
+    //   Start Button Program 
+      startButton.addEventListener("click", function () {
+        myInterval = setInterval(function () {
+          if (a == listOfColors.length - 1) {
+            a = 0;
+          }
+          console.log(`Color ${a}`);
+          background.style.backgroundColor = listOfColors[a];
+          a += 1;
+        }, 2000);
+      });
+    //   Stop Button Program
+      stopButton.addEventListener("click", function () {
+        clearInterval(myInterval);
+        a = 0;
+        // myInterval = null;
+        console.log(stopButton);
+        
+      });
+    </script>
+  </body>
+</html>
